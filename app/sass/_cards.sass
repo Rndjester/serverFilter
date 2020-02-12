@@ -1,0 +1,25 @@
+.products
+    background-color: #f1f1f1 
+    min-height: 12000px
+.price
+    display: flex
+    align-items: center
+    +font(12px)
+    &__direction
+        display: none
+        margin-left: 7px
+        font-weight: bold
+        cursor: pointer
+    &_active
+        display: flex  
+    &__img
+        display: flex
+        flex-direction: column
+        align-self: center
+        margin-left: 4px
+        padding-top: 3px
+    &__rotate 
+        transform: rotate(180deg)
+        margin-top: 2px
+.cards
+    

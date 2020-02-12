@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <!--заголовок-->
+    <div class="container">
+        <h1 class="filter__title">Подобрать конфигурацию сервера</h1>
+    </div>
+    <!--Секция фильтры-->
+    <section class="filter" id = 'filter'>
+        <!--блок-контейнер-->
+        <div class="container">
+            <!--обертка для кнопок-фильтров-->
+            <div class="filter__wrap">
+                <div class="filter__block">
+                    <div class="filter__item filter__form-factor ">
+                        <div class="filter__btn ">Форм-фактор</div> 
+                        <div class="filter__list">
+                            <div class="filter__list-wrap" id = 'formFactorList'>
+                                <input class = 'filter__checkbox'  type="checkbox" id = formFactorCheckbox-1>
+                                <label class = 'filter__label label' for="formFactorCheckbox-1">1U</label>
+                                <input class = 'filter__checkbox' type="checkbox" id = formFactorCheckbox-2>
+                                <label class = 'filter__label label' for="formFactorCheckbox-2">2U</label>
+                                <input class = 'filter__checkbox' type="checkbox" id = formFactorCheckbox-3>
+                                <label class = 'filter__label label' for="formFactorCheckbox-3">3U</label>
+                                <input class = 'filter__checkbox' type="checkbox" id = formFactorCheckbox-4>
+                                <label class = 'filter__label label' for="formFactorCheckbox-4">4U</label>
+                                <input class = 'filter__checkbox' type="checkbox" id = formFactorCheckbox-4>
+                                <label class = 'filter__label label' for="formFactorCheckbox-4">Tower</label>
+                            </div>
+                        </div>                   
+                    </div>
+                    <!--Окончание блока фильтра форм-фактор-->
+                    <div class="filter__item filter__brand">
+                        <div class="filter__btn">Производитель</div> 
+                        <div class="filter__list ">
+                            <div class="filter__list-wrap" id = 'brandList'>
+                                <input class = 'filter__checkbox' type="checkbox" id = brandCheckbox-1>
+                                <label class = 'filter__label label' for="brandCheckbox-1">Asus</label>
+                                <input class = 'filter__checkbox' type="checkbox" id = brandCheckbox-2>
+                                <label class = 'filter__label label' for="brandCheckbox-2">Dell</label>
+                                <input class = 'filter__checkbox' type="checkbox" id = brandCheckbox-3>
+                                <label class = 'filter__label label' for="brandCheckbox-3">Hewlett Packard</label>
+                                <input class = 'filter__checkbox' type="checkbox" id = brandCheckbox-4>
+                                <label class = 'filter__label label' for="brandCheckbox-4">IBM</label>
+                                <input class = 'filter__checkbox' type="checkbox" id = brandCheckbox-5>
+                                <label class = 'filter__label label' for="brandCheckbox-5">Supermicro</label>
+                            </div>
+                        </div>                       
+                    </div>
+                    <!--Окончание блока фильтра произврдитель-->
+                    <div class="filter__item filter__cpu">
+                        <div class="filter__btn">Процессор</div>      
+                        <div class="filter__list ">
+                            <div class="filter__list-wrap" id = 'cpuList'>
+                                <input class = 'filter__checkbox' type="checkbox" id = cpuCheckbox-1>
+                                <label class = 'filter__label label' for="cpuCheckbox-1">AMD Opteron 61XX</label>
+                                <input class = 'filter__checkbox' type="checkbox" id = cpuCheckbox-2>
+                                <label class = 'filter__label label' for="cpuCheckbox-2">intel Xeon 53XX/54XX</label>
+                                <input class = 'filter__checkbox' type="checkbox" id = cpuCheckbox-3>
+                                <label class = 'filter__label label' for="cpuCheckbox-3">intel Xeon 55XX/56XX</label>
+                                <input class = 'filter__checkbox' type="checkbox" id = cpuCheckbox-4>
+                                <label class = 'filter__label label' for="cpuCheckbox-4">Intel Xeon E3-12XX</label>
+                                <input class = 'filter__checkbox' type="checkbox" id = cpuCheckbox-5>
+                                <label class = 'filter__label label' for="cpuCheckbox-5">Intel Xeon E5-26XXV3/V4</label>
+                                <input class = 'filter__checkbox' type="checkbox" id = cpuCheckbox-6>
+                                <label class = 'filter__label label' for="cpuCheckbox-6">Intel Xeon E5-26XX/E5-26XXV2</label>
+                            </div>
+                        </div>                       
+                    </div>
+                    <!--Окончание блока фильтра процессоров-->
+                    <div class="filter__item filter__ddr">
+                        <div class="filter__btn">Тип памяти</div>   
+                        <div class="filter__list ">
+                            <div class="filter__list-wrap" id = 'ddrList'>
+                                <input class = 'filter__checkbox' type="checkbox" id = ddrCheckbox-1>
+                                <label class = 'filter__label label' for="ddrCheckbox-1">DDR2</label>
+                                <input class = 'filter__checkbox' type="checkbox" id = ddrCheckbox-2>
+                                <label class = 'filter__label label' for="ddrCheckbox-2">DDR3</label>
+                                <input class = 'filter__checkbox' type="checkbox" id = ddrCheckbox-3>
+                                <label class = 'filter__label label' for="ddrCheckbox-3">DDR4</label>
+                            </div>
+                        </div>                         
+                    </div>
+                    <!--Окончание блока фильтра памяти-->
+                    <div class="filter__item fliter__disk">
+                        <div class="filter__btn">Жесткие диски</div>     
+                        <div class="filter__list ">
+                            <div class="filter__list-wrap" id = 'diskList'>
+                                <input class = 'filter__checkbox' type="checkbox" id = diskCheckbox-1>
+                                <label class = 'filter__label label' for="diskCheckbox-1">2.5"</label>
+                                <input class = 'filter__checkbox' type="checkbox" id = diskCheckbox-2>
+                                <label class = 'filter__label label' for="diskCheckbox-2">3.5"</label>
+                            </div>
+                        </div>                      
+                    </div>
+                    <!--Окончание блока фильтри дисков-->
+                </div>
+                <!--Окончание блока обертки фидьтров-кнопок-->
+                <div class="filter__state">
+                    <p class = 'state__text'>Состояниe:</p>
+                    <input type="checkbox" class = 'state__checkbox' name="state__new" id="state__new">
+                    <label class = 'state__label label' for="state__new" id = 'new'>новые</label>
+                    <input type="checkbox" class = 'state__checkbox' name="state__refurbished" id="state__refurbished">
+                    <label class = 'state__label label' for="state__refurbished" id = 'refurbished'>refurbished</label>
+                </div>
+                <!--Окончание блока фильтра состояния диска-->
+            </div>
+
+            <button class="filter__success button">Применить</button>
+            <!--Окончание кнопки для мобильной версии "принять" -->
+            <button class="filter__reset button">Сбросить</button>
+            <!--Окончание кнопки для мобильной версии "Сбросить" -->
+            <div class="filter__choose">
+                <p class="choose__title">Выбрано</p>
+                <div class="choose__wrap">
+                    <div class="choose__items">
+
+                    </div>
+                    <button class = 'choose__reset'>Сбросить все фильтры</button>
+                </div>
+            </div> 
+            <!--Окончание блока выбранных в фильтрах элементов -->
+        </div>
+        <!--Окончание блока контейнер -->
+    </section>
+    <!--Окончание секции фильтры / начало секии каталога товаров-->
+    <section class = 'products'>
+        <div class="container">
+            <!--блок фильтра цены-->
+            <div class="price">
+                <p class="price__text">Сортировать по:</p>
+                <div class="price__direction price_active">
+                    Увеличению цены
+                    <div class="price__img">
+                        <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.33325 3.33301L3.99992 -0.000326157L0.666586 3.33301L7.33325 3.33301Z" fill="black"/>
+                        </svg>
+                        <svg class = 'price__rotate' width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.33325 3.33301L3.99992 -0.000326157L0.666586 3.33301L7.33325 3.33301Z" fill="#A6A6A6"/>
+                        </svg>
+                            
+                    </div>
+                </div>
+                <div class="price__direction">
+                    Уменьшению цены
+                    <div class="price__img">
+                        <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.33325 3.33301L3.99992 -0.000326157L0.666586 3.33301L7.33325 3.33301Z" fill="#A6A6A6"/>
+                        </svg>
+                        <svg class = 'price__rotate' width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.33325 3.33301L3.99992 -0.000326157L0.666586 3.33301L7.33325 3.33301Z" fill="black"/>
+                        </svg>
+                            
+                    </div>
+                </div>
+                
+            </div>
+            <!--окончание блока фильтра цены-->
+            <div class="cards">
+                <div class="cards__item">
+            
+                </div>
+            </div>
+        </div>
+        <!--окончание блока контейнер-->
+        <div class = 'filter__block_fixed'> 
+            <a href="#filter" class = 'filter__link'><button class="filter__button_fixed button">
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.5 0L18.5 13M18.5 20L18.5 16" stroke="black"/>
+                <line x1="10.5" y1="4" x2="10.5" y2="20" stroke="black"/>
+                <path d="M2.5 0L2.5 8M2.5 20L2.5 11" stroke="black"/>
+                <circle cx="10.5" cy="2.5" r="2" stroke="black"/>
+                <circle cx="2.5" cy="9.5" r="2" stroke="black"/>
+                <circle cx="18.5" cy="14.5" r="2" stroke="black"/>
+                </svg>
+                Фильтр <span class = 'filter__choosen_fixed'></span></button>
+            <!--Окончание скролл-кнопки для мобильной версии "фильтр" -->
+        </div></a>
+    </section>
+    <!--окончание секции каталога-->
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main-min.js"></script>
+</body>
+</html>
